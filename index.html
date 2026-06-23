@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>QR Code Generator & Scanner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/html5-qrcode" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+<h1>QR Code Generator & Scanner</h1>
+<p class="subtitle">Generate and Scan QR Codes Instantly</p>
+
+<div class="card">
+
+<div class="section">
+<h2>Generate QR Code</h2>
+
+<input type="text" id="qrText" placeholder="Enter text or URL">
+
+<div class="btn-group">
+<button id="generateBtn">Generate</button>
+<button id="clearBtn">Clear</button>
+</div>
+
+<div class="qr-box">
+<img id="qrImage" src="">
+</div>
+
+<a id="downloadBtn" download="QRCode.png">Download QR</a>
+</div>
+
+<div class="section">
+<h2>Scan QR Code</h2>
+
+<div id="reader"></div>
+
+<div class="btn-group">
+<button id="startScanner">Start Scanner</button>
+<button id="stopScanner">Stop Scanner</button>
+</div>
+
+<div class="result-box">
+<h3>Scanned Result</h3>
+<p id="result">No QR Code Scanned</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
